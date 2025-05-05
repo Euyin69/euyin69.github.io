@@ -1,4 +1,4 @@
-let miImage = document.getElementsByClassName("psico"); /*defino una variable y guardo TODOS los elementos que encuentre
+ let miImage = document.getElementsByClassName("psico"); /*defino una variable y guardo TODOS los elementos que encuentre
 														de la clase "psico". Puede haber mas de uno. es una variable tipo ARRAY*/
 miImage[0].onclick = function () {	/*para seleccionar el primer elemento uso [0] aunque solo haya un elemento */
   let miSrc = miImage[0].getAttribute("src");
@@ -12,7 +12,7 @@ let miBoton = document.querySelector("button");
 let miTitulo = document.querySelector("h1");
 
 function estableceNombreUsuario() {
-  let miNombre = prompt("Por favor, ingresa tu nombre.");
+  let miNombre = prompt("Por favor, ingresa tu nombre (obligatorio)");
   if (!miNombre)
   {
     estableceNombreUsuario();
